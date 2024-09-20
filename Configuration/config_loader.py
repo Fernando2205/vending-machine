@@ -65,11 +65,13 @@ def process_quick_purchases(file_name: str, vending_machine: VendingMachine):
         quick_purchase_section = re.search(
             r'Quick Purchase.*?(?=\n\n)', content, re.DOTALL)
         if quick_purchase_section:
+            contador = 1
             # Skip the header line with [1:]
             for line in quick_purchase_section.group().split('\n')[1:]:
                 parts = line.split(',')
                 if len(parts) == 3:
                     name, quantity, money = parts
+                    print(contador)
                     success, change = vending_machine.process_purchase(
                         name.strip(), int(quantity), int(money))
                     if success:
@@ -77,6 +79,7 @@ def process_quick_purchases(file_name: str, vending_machine: VendingMachine):
                     print()
                 else:
                     print("No se encontró linea de definicion para quick")
+                contador += 1
         print("--------------------------------")
         # Process advanced quick purchases
         advanced_purchase_section = re.search(

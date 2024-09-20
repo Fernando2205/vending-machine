@@ -9,104 +9,104 @@
 Products # Name-Price-Quantity
 Peruvian Juice 250, 2, 20
 Canadian Juice 250, 4, 20
-Mexican  Juice 250, 3, 20
+Mexican Juice 250, 3, 20
 American Juice 250, 5, 20
 Colombian Juice 250, 1, 20 
 Peruvian Coke 250, 2, 20
 Canadian Coke 250, 4, 20
-Mexican  Coke 250, 3, 20
+Mexican Coke 250, 3, 20
 American Coke 250, 5, 20
 Colombian Coke 250, 1, 20 
 Peruvian Coke 250, 2, 20
 Canadian Coke 250, 4, 20
-Mexican  Coke 250, 3, 20
+Mexican Coke 250, 3, 20
 American Coke 250, 5, 20
 Colombian Coke 250, 1, 20 
 Peruvian Coke 350, 2, 20
 Canadian Coke 350, 4, 20
-Mexican  Coke 350, 3, 20
+Mexican Coke 350, 3, 20
 American Coke 350, 5, 20
 Colombian Coke 350, 1, 20 
 Peruvian Cookies, 4, 20
 Canadian Cookies, 8, 20
-Mexican  Cookies, 6, 20
+Mexican Cookies, 6, 20
 American Cookies, 10, 20
 Colombian Cookies, 2, 20 
 Peruvian Organic Cookies, 10, 20
 Canadian Organic Cookies, 18, 20
-Mexican  Organic Cookies, 16, 20
+Mexican Organic Cookies, 16, 20
 American Organic Cookies, 20, 20
 Colombian Organic Cookies, 8, 20 
 Peruvian Organic Cookies, 7, 20
 Canadian Organic Cookies, 8, 20
-Mexican  Organic Cookies, 6, 20
+Mexican Organic Cookies, 6, 20
 American Organic Cookies, 15, 20
 Colombian Organic Cookies, 5, 20 
 Peruvian Cake 80gr, 5, 20
 Canadian Cake 80gr, 7, 20
-Mexican  Cake 80gr, 6, 20
+Mexican Cake 80gr, 6, 20
 American Cake 80gr, 9, 20
 Colombian Cake 80gr, 3, 20 
 Peruvian Cake 100gr, 6, 20
 Canadian Cake 100gr, 8, 20
 Canadian Cake 80gr, 10, 20
-Mexican  Cake 100gr, 7, 20
+Mexican Cake 100gr, 7, 20
 American Cake 100gr, 10, 20
 Colombian Cake 100gr, 4, 20 
 
 Quick Purchase # Basic Level Name - Quantity - Money (75 = 50+20+5; 95 = 50+20+20+5; 105 = 100+5; 205 = 100+100+5)
 Peruvian Juice 250, 5, 50
 Canadian Juice 250, 3, 50
-Mexican  Juice 250, 5, 50
+Mexican Juice 250, 5, 50
 American Juice 250, 8, 50
 Colombian Juice 250, 5, 50
 Peruvian Organic Cookies, 5, 200
 Canadian Organic Cookies, 5, 200
-Mexican  Organic Cookies, 15, 200
+Mexican Organic Cookies, 15, 200
 American Organic Cookies, 4, 200
 Colombian Organic Cookies, 5, 200 
 Peruvian Organic Cookies, 4, 200
 Canadian Organic Cookies, 8, 200
-Mexican  Organic Cookies, 5, 200
+Mexican Organic Cookies, 5, 200
 American Organic Cookies, 2, 200
 Colombian Organic Cookies, 1, 200 
 Peruvian Cookies, 1, 200
 Canadian Cookies, 5, 200
-Mexican  Cookies, 5, 200
+Mexican Cookies, 5, 200
 American Cookies, 8, 200
 Colombian Cookies, 5, 200 
 Peruvian Cookies, 4, 200
 Canadian Cookies, 3, 200
-Mexican  Cookies, 12, 200
+Mexican Cookies, 12, 200
 American Cookies, 7, 200
 Colombian Cookies, 6, 200 
 Peruvian Juice 250, 5, 20
 Canadian Juice 250, 10, 20
-Mexican  Juice 250, 3, 20
+Mexican Juice 250, 3, 20
 American Juice 250, 5, 20
 Colombian Juice 250, 4, 20
 Peruvian Organic Cookies, 15, 400
 Canadian Organic Cookies, 14, 400
-Mexican  Organic Cookies, 5, 400
+Mexican Organic Cookies, 5, 400
 American Organic Cookies, 11, 400
 Colombian Organic Cookies, 10, 400 
 Peruvian Juice 250, 13, 150
-Canadian Juice 250, 25 150
-Mexican  Juice 250, 1, 150
+Canadian Juice 250, 25, 150
+Mexican Juice 250, 1, 150
 American Juice 250, 3, 150
 Colombian Juice 250, 1, 150
 
 
 Quick Purchase 2 # Advanced Level Name - Quantity - Money (75 = 50+20+5; 95 = 50+20+20+5; 105 = 100+5; 205 = 100+100+5)
 (American Cake 80gr, 5; Colombian Cake 80gr, 8; Peruvian Cake 80gr, 5; Colombian Organic Cookies, 7; Canadian Organic Cookies, 12; Colombian Organic Cookies, 5; Colombian Cake 80gr, 7; 100)
-(Peruvian Cake 80gr, 4; Canadian Cake 80gr, 4; Mexican  Cake 80gr, 3; American Cake 80gr, 3; Colombian Cake 80gr, 4; 200)
-(Mexican  Organic Cookies, 7; American Cake 100gr, 9;Canadian Cake 80gr, 6; Colombian Organic Cookies, 7; Canadian Cake 80gr, 2; American Cake 80gr, 1; Colombian Cake 80gr, 8; 300)
-(American Cake 80gr, 3; Peruvian Cake 80gr, 7; Canadian Cake 80gr, 5; Mexican  Organic Cookies, 4; American Cake 80gr, 3; Colombian Cake 80gr, 9; 400)
-(Canadian Cake 100gr, 3; Colombian Organic Cookies, 2;Canadian Cake 80gr, 2; Canadian Cake 80gr, 9; Mexican  Cake 80gr, 7; American Cake 80gr, 5; Colombian Cake 80gr, 8; 500)
+(Peruvian Cake 80gr, 4; Canadian Cake 80gr, 4; Mexican Cake 80gr, 3; American Cake 80gr, 3; Colombian Cake 80gr, 4; 200)
+(Mexican Organic Cookies, 7; American Cake 100gr, 9;Canadian Cake 80gr, 6; Colombian Organic Cookies, 7; Canadian Cake 80gr, 2; American Cake 80gr, 1; Colombian Cake 80gr, 8; 300)
+(American Cake 80gr, 3; Peruvian Cake 80gr, 7; Canadian Cake 80gr, 5; Mexican Organic Cookies, 4; American Cake 80gr, 3; Colombian Cake 80gr, 9; 400)
+(Canadian Cake 100gr, 3; Colombian Organic Cookies, 2;Canadian Cake 80gr, 2; Canadian Cake 80gr, 9; Mexican Cake 80gr, 7; American Cake 80gr, 5; Colombian Cake 80gr, 8; 500)
 (American Cake 80gr, 3;Peruvian Cake 100gr, 5; Colombian Organic Cookies, 5; Canadian Cake 100gr, 9; Colombian Organic Cookies, 7; Colombian Cake 100gr, 6; 400)
-(Canadian Cake 100gr, 6; Canadian Cake 100gr, 8; Mexican  Organic Cookies, 7; American Cake 100gr, 9; Colombian Cake 100gr, 4; 500)
-(Mexican  Organic Cookies, 7; American Cake 100gr, 9;Peruvian Cake 100gr, 8; Canadian Cake 100gr, 5; Canadian Cake 100gr, 8; American Cake 100gr, 4; Colombian Cake 100gr, 4; 600)
-(Canadian Cake 100gr, 1; Colombian Organic Cookies, 4; Mexican  Organic Cookies, 4; American Cake 100gr, 3; Colombian Cake 100gr, 3; 700)
+(Canadian Cake 100gr, 6; Canadian Cake 100gr, 8; Mexican Organic Cookies, 7; American Cake 100gr, 9; Colombian Cake 100gr, 4; 500)
+(Mexican Organic Cookies, 7; American Cake 100gr, 9;Peruvian Cake 100gr, 8; Canadian Cake 100gr, 5; Canadian Cake 100gr, 8; American Cake 100gr, 4; Colombian Cake 100gr, 4; 600)
+(Canadian Cake 100gr, 1; Colombian Organic Cookies, 4; Mexican Organic Cookies, 4; American Cake 100gr, 3; Colombian Cake 100gr, 3; 700)
 (Peruvian Cake 100gr, 9; Canadian Cake 100gr, 5; Canadian Cake 100gr, 3; Colombian Organic Cookies, 2; Colombian Cake 100gr, 2; 800)
 
 

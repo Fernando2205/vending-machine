@@ -8,13 +8,13 @@ class Administrator:
 
     def refill_machine(self, products: Dict[str, Dict[str, int]], money: Dict[int, int]):
         """
-        Repone productos y dinero en la máquina expendedora en una sola operación.
+        Refills products and money in the vending machine in a single operation.
 
         Args:
-        products (Dict[str, Dict[str, int]]): Diccionario de productos a agregar o actualizar.
-                                              Formato: {'nombre_producto': {'price': precio, 'quantity': cantidad}}
-        money (Dict[int, int]): Diccionario de dinero a agregar. 
-                                Formato: {denominacion: cantidad}
+        products (Dict[str, Dict[str, int]]): Dictionary of products to add or update.
+                              Format: {'product_name': {'price': price, 'quantity': quantity}}
+        money (Dict[int, int]): Dictionary of money to add.
+                    Format: {denomination: quantity}
         """
         for product_name, details in products.items():
             self.vending_machine.add_product(
@@ -27,7 +27,7 @@ class Administrator:
 
     def generate_full_report(self):
         """
-        Genera un reporte completo del estado de la máquina expendedora.
+        Generates a complete report of the vending machine's status.
         """
         print("=== REPORTE COMPLETO DE LA MÁQUINA EXPENDEDORA ===")
         print("\nProductos:")
@@ -35,14 +35,6 @@ class Administrator:
         print("\nDinero:")
         self.vending_machine.money_report()
         print("=== FIN DEL REPORTE ===")
-
-    def optimize_change(self):
-        """
-        Optimiza las denominaciones de dinero en la máquina para facilitar el cambio.
-        """
-        # Implementación de la lógica de optimización
-        # Este es un método específico del administrador que no existe en la máquina expendedora
-        pass
 
     # Métodos de acceso directo a la máquina expendedora
     def add_product(self, name: str, price: int, quantity: int):

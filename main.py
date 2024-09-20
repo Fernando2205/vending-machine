@@ -10,8 +10,6 @@ Author: Delio Fernando Palacios Viafara - 30000115782
 
 """
 
-import re
-
 from Configuration.config_loader import load_configuration, process_quick_purchases
 from Interfaces import admin_interface, customer_interface
 from Models.Administrator import Administrator
@@ -35,7 +33,6 @@ def main():
         if choice == '1':
             customer_interface.run_customer_interface(customer)
         elif choice == '2':
-            # Aquí podrías agregar una verificación de contraseña para el administrador
             admin_interface.run_admin_interface(admin)
         elif choice == '3':
             config_file = 'ConfiguracionExercise.txt'

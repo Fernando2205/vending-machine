@@ -10,14 +10,14 @@ class Customer:
 
     def insert_money(self, money: Dict[int, int]) -> int:
         """
-        Introduce dinero en la máquina expendedora.
+        Inserts money into the vending machine.
 
         Args:
-        money (Dict[int, int]): Un diccionario donde la clave es la denominación
-                                y el valor es la cantidad de billetes/monedas.
+        money (Dict[int, int]): A dictionary where the key is the denomination
+                    and the value is the quantity of bills/coins.
 
         Returns:
-        int: El total de dinero insertado.
+        int: The total amount of money inserted.
         """
         total = 0
         for denomination, quantity in money.items():
@@ -32,14 +32,14 @@ class Customer:
 
     def select_product(self, product_name: str, quantity: int) -> bool:
         """
-        Selecciona un producto y la cantidad a comprar.
+        Selects a product and the quantity to purchase.
 
         Args:
-        product_name (str): Nombre del producto.
-        quantity (int): Cantidad del producto a comprar.
+        product_name (str): Name of the product.
+        quantity (int): Quantity of the product to purchase.
 
         Returns:
-        bool: True si la selección es válida, False en caso contrario.
+        bool: True if the selection is valid, False otherwise.
         """
         if product_name not in self.vending_machine.products:
             print(f"Producto '{product_name}' no disponible.")
@@ -65,10 +65,10 @@ class Customer:
 
     def can_buy_cheapest(self) -> bool:
         """
-        Verifica si el cliente tiene suficiente dinero para comprar el producto más barato.
+        Checks if the customer has enough money to buy the cheapest product.
 
         Returns:
-        bool: True si puede comprar el más barato, False en caso contrario.
+        bool: True if they can buy the cheapest product, False otherwise.
         """
         if not self.vending_machine.products:
             return False
@@ -78,11 +78,11 @@ class Customer:
 
     def finish_transaction(self) -> Dict[int, int]:
         """
-        Finaliza la transacción y devuelve el cambio optimizado.
+        Finishes the transaction and returns the optimized change.
 
         Returns:
-        Dict[int, int]: Un diccionario con el cambio, donde la clave es la denominación
-                        y el valor es la cantidad de billetes/monedas.
+        Dict[int, int]: A dictionary with the change, where the key is the denomination
+                and the value is the quantity of bills/coins.
         """
         change = self.vending_machine.remove_money(self.inserted_money)
 
@@ -103,7 +103,7 @@ class Customer:
 
     def shop(self):
         """
-        Inicia el proceso de compra interactivo.
+        Starts the interactive shopping process.
         """
         print("Bienvenido a la máquina expendedora.")
         while True:
@@ -113,8 +113,7 @@ class Customer:
             action = input("¿Qué desea hacer?").lower()
 
             if action == "1":
-                # Ajusta según las denominaciones aceptadas
-                denominations = {1: 0, 5: 0, 10: 0, 20: 0, 50: 0, 100: 0}
+                denominations = {1: 0, 5: 0, 10: 0, 20: 0, 50: 0, }
                 for denom in denominations:
                     qty = int(
                         input(f"Cantidad de billetes de ${denom}: "))
