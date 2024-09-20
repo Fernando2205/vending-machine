@@ -28,7 +28,7 @@ Este proyecto implementa una máquina expendedora en Python. La máquina expende
 - `Product.py`: Contiene la clase `Product`.
 - `configuracion.txt`: Archivo de configuración opcional para productos y dinero.
 
-## Ejemplos de Uso
+<!-- ## Ejemplos de Uso
 
 ### Agregar un Producto
 
@@ -39,4 +39,4 @@ from producto import Producto
 maquina = MaquinaExpendedora()
 producto = Producto(codigo=1, nombre="Soda", precio=150, cantidad=10)
 maquina.agregar_producto(producto)
-```
+``` -->
