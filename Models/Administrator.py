@@ -1,5 +1,5 @@
 from typing import Dict
-from VendingMachine import VendingMachine
+from Models.VendingMachine import VendingMachine
 
 
 class Administrator:

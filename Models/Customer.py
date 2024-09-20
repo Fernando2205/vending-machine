@@ -1,5 +1,5 @@
 from typing import Dict, List, Tuple
-from VendingMachine import VendingMachine
+from Models.VendingMachine import VendingMachine
 
 
 class Customer:
@@ -107,19 +107,21 @@ class Customer:
         """
         print("Bienvenido a la máquina expendedora.")
         while True:
-            action = input(
-                "¿Qué desea hacer? (insertar/comprar/finalizar): ").lower()
+            print("1. Insertar dinero")
+            print("2. Comprar producto")
+            print("3. Finalizar compra")
+            action = input("¿Qué desea hacer?").lower()
 
-            if action == "insertar":
+            if action == "1":
                 # Ajusta según las denominaciones aceptadas
                 denominations = {1: 0, 5: 0, 10: 0, 20: 0, 50: 0, 100: 0}
                 for denom in denominations:
                     qty = int(
-                        input(f"Cantidad de billetes/monedas de ${denom}: "))
+                        input(f"Cantidad de billetes de ${denom}: "))
                     denominations[denom] = qty
                 self.insert_money(denominations)
 
-            elif action == "comprar":
+            elif action == "2":
                 product_name = input("Nombre del producto: ")
                 quantity = int(input("Cantidad: "))
                 if self.select_product(product_name, quantity):
@@ -129,10 +131,10 @@ class Customer:
                         self.finish_transaction()
                         break
 
-            elif action == "finalizar":
+            elif action == "3":
                 self.finish_transaction()
                 break
 
             else:
                 print(
-                    "Acción no reconocida. Por favor, elija 'insertar', 'comprar' o 'finalizar'.")
+                    "Acción no reconocida. Por favor, ingrese una opción válida.")
