@@ -1,0 +1,23 @@
+- Modelar el problema de la Máquina Expendedora en Papel
+- Usar Listas y Clases
+- Modelar el lado del cliente (comprador) que hace las siguientes tareas:
+	- Introduce el dinero (verificar las denominaciones, optimizado)
+	- Identifica el código del producto 
+	- Selecciona la cantidad de productos a comprar (verificar dinero)
+	- Puede quedarse comprando mas productos solo si tiene dinero suficiente para el más barato 
+	- Termina la acción y devuelve el dinero optimizado 
+
+- Modelar el lado del adminstrador que hace las siguientes tareas:
+	- Introduce el dinero (verificar las denominaciones, optimizado), defina las denominaciones a usar
+	- Introduce productos nuevos, tenga en cuenta los que ya estan en la máquina 
+	- Retira dinero de la máquina (Tenga en cuenta las denominaciones, optimizado)
+	- Reporte de los productos actuales en la máquina, con informacion del valor total 
+	- Reporte de las denominaciones actuales en la máquina, con informacion del valor total  
+
+Dinero Optimizado 
+	- Siempre trata de devolver la denominación mas alta al cliente 
+	- Siempre que el administrador saca dinero, saca de las denominaciones mas altas primero 
+ 
+SORPRÉNDEME: Hacer opciones adicionales a las existentes.
+
+Evaluación: Clase de las semana 6 y 7, en la clase, no acepto ejercicios por correo
