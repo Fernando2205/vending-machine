@@ -18,6 +18,15 @@ Attributes:
         self.products: Dict[str, Product] = {}
         self.money: Dict[int, int] = {}
 
+    def get_product_price(self, product_name: str) -> int:
+        """
+        Returns the price of a product.
+        """
+        if product_name in self.products:
+            return self.products[product_name].price
+        else:
+            raise ValueError(f"Producto '{product_name}' no encontrado.")
+
     def add_product(self, name: str, price: int, quantity: int) -> None:
         """
         Adds a product to the vending machine.
@@ -149,27 +158,39 @@ Attributes:
         product = self.products[product_name]
 
         if product.quantity < quantity:
-            print(
-                f"ERROR: No hay suficientes productos '{product_name}'. Disponible: {product.quantity}, Solicitado: {quantity}")
-            return False, {}
+            # print(
+            #     f"ERROR: No hay suficientes productos '{product_name}'. Disponible: {product.quantity}, Solicitado: {quantity}")
+            for p in self.products.values():
+                p.quantity += 20
+
+            # return False, {}
 
         total_price = product.price * quantity
 
         if money_inserted < total_price:
             print(
                 f"ERROR: No tiene suficiente dinero para realizar la compra. Requerido {total_price}, Ingresado: {money_inserted}")
+
             return False, {}
 
         if not self.add_money_in_highest_denominations(money_inserted):
-            print("ERROR: Se excede la capacidad de la máquina. El dinero se devuelve..")
+            print(f"ERROR: Se excede la capacidad de la máquina. Se regresan los {
+                  money_inserted}.")
             return False, {}
 
         change_amount = money_inserted - total_price
 
         if not self.has_sufficient_change(change_amount):
-            print(f"ERROR: La máquina no tiene suficiente cambio para devolver {
-                  change_amount}. Se devuelve el dinero ingresado {money_inserted}.")
-            return False, {}
+            # print(f"ERROR: La máquina no tiene suficiente cambio para devolver {
+            #       change_amount}. Se devuelve el dinero ingresado {money_inserted}.")
+            print("No hay suficiente cambio, cantidad de dinero actual:\n")
+
+            self.money_report()
+            for d in self.money.keys():
+                self.money[d] += 25
+            print("\nCantidad de dinero actualizada:\n")
+            self.money_report()
+            # return False, {}
 
         # If we reach here, we have enough product, the customer has enough money,
         # and the machine have enough change
@@ -181,19 +202,20 @@ Attributes:
         return True, change
 
     def process_advanced_purchase(self, purchases: List[Tuple[str, int]], money_inserted: int) -> Tuple[bool, Dict[int, int]]:
-        for product_name, quantity in purchases:
+        total_price = 0
+        for product_name, qty in purchases:
             if product_name not in self.products:
                 print(f"ERROR: Producto '{product_name}' no encontrado.")
                 return False, {}
 
             product = self.products[product_name]
-
-            if product.quantity < quantity:
-                print(
-                    f"ERROR: No hay suficiente stock de'{product_name}'. Disponible: {product.quantity}")
-                return False, {}
-
-            total_price = product.price * quantity
+            total_price += product.price * qty
+            if product.quantity < qty:
+                # print(
+                #     f"ERROR: No hay suficiente stock de'{product_name}'. Disponible: {product.quantity}")
+                # return False, {}
+                for p in self.products.values():
+                    p.quantity += 20
 
         if money_inserted < total_price:
             print(
@@ -203,16 +225,19 @@ Attributes:
         if not self.add_money_in_highest_denominations(money_inserted):
             print("ERROR: Se excede la capacidad de la máquina. El dinero se devuelve.")
             return False, {}
+
         change_amount = money_inserted - total_price
         if not self.has_sufficient_change(change_amount):
-            print(f"ERROR: La máquina no tiene suficiente cambio para devolver {
-                  change_amount}. Se devuelve el dinero ingresado {money_inserted}.")
-            return False, {}
+            # print(f"ERROR: La máquina no tiene suficiente cambio para devolver {
+            #       change_amount}. Se devuelve el dinero ingresado {money_inserted}.")
+            for d in self.money.keys():
+                self.money[d] += 10
+            # return False, {}
 
         for product_name, quantity in purchases:
             self.products[product_name].quantity -= quantity
             print(
-                f"Compraste {quantity} {'unidad' if quantity == 1 else 'unidades'} de '{product_name}' por {total_price}, con {money_inserted}")
+                f"Compraste {quantity} {'unidad' if quantity == 1 else 'unidades'} de '{product_name}'")
 
         change = self.remove_money(money_inserted - total_price)
         return True, change

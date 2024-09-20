@@ -26,8 +26,9 @@ def main():
         print("\n--- Menú Principal ---")
         print("1. Modo Cliente")
         print("2. Modo Administrador")
-        print("3. Leer archivo")
-        print("4. Salir")
+        print("3. Cargar configuración (archivo)")
+        print("4. Ejecutar compras (archivo)")
+        print("5. Salir")
         choice = input("Seleccione una opción: ")
 
         if choice == '1':
@@ -35,12 +36,14 @@ def main():
         elif choice == '2':
             admin_interface.run_admin_interface(admin)
         elif choice == '3':
-            config_file = 'ConfiguracionExercise.txt'
+            config_file = 'ConfiguracionExercise2.txt'
             print("Cargando configuración...")
             load_configuration(config_file, machine1)
             print("Configuración cargada.")
-            process_quick_purchases(config_file, machine1)
+            #
         elif choice == '4':
+            process_quick_purchases(config_file, machine1)
+        elif choice == '5':
             print("Saliendo del programa...")
             break
         else:

@@ -75,8 +75,11 @@ def process_quick_purchases(file_name: str, vending_machine: VendingMachine):
                     success, change = vending_machine.process_purchase(
                         name.strip(), int(quantity), int(money))
                     if success:
-                        print(f"Cambio {change}")
-                    print()
+                        total_value = 0
+                        for p in change:
+                            total_value += p * change[p]
+
+                        print(f"Cambio {change} | {total_value}")
                 else:
                     print("No se encontró linea de definicion para quick")
                 contador += 1
@@ -89,16 +92,26 @@ def process_quick_purchases(file_name: str, vending_machine: VendingMachine):
             for line in advanced_purchase_section.group().split('\n')[1:]:
                 if line.strip():
                     try:
+                        total_price = 0
                         purchases_str, money = line.strip('()').rsplit(';', 1)
                         purchases = [tuple(item.strip().rsplit(',', 1))
                                      for item in purchases_str.split(';')]
                         purchases = [(name.strip(), int(quantity))
                                      for name, quantity in purchases]
-                        print(f"{purchases_str} | plata: {money}")
+
+                        for name, quantity in purchases:
+                            product = vending_machine.products[name]
+                            total_price += product.price * quantity
+
+                        print(f"{purchases_str} | Dinero: {
+                              money} | Total: {total_price}")
                         success, change = vending_machine.process_advanced_purchase(
                             purchases, int(money))
                         if success:
-                            print(f"Cambio: {change}")
+                            total_value = 0
+                            for p in change:
+                                total_value += p * change[p]
+                            print(f"Cambio: {change} | {total_value}")
                         print()
                     except ValueError:
                         print(

@@ -1,0 +1,129 @@
+﻿Dollars ## Money, Quantity
+50,  20
+20,  20
+10,  20
+5,   30
+2,   30
+1,   30
+
+Products # Name-Price-Quantity
+PeruJuice250, 2, 20
+CanadaJuice250, 4, 20
+MexicanJuice250, 3, 20
+AmericanJuice250, 5, 20
+ColombianJuice250, 1, 20 
+PeruvianCoke250, 2, 20
+CanadianCoke250, 4, 20
+MexicanCoke250, 3, 20
+AmericanCoke250, 5, 20
+ColombianCoke250, 1, 20 
+PeruvianCoke250, 2, 20
+CanadianCoke250, 4, 20
+MexicanCoke250, 3, 20
+AmericanCoke250, 5, 20
+ColombianCoke250, 1, 20 
+PeruvianCoke350, 2, 20
+CanadianCoke350, 4, 20
+MexicanCoke350, 3, 20
+AmericanCoke350, 5, 20
+ColombianCoke350, 1, 20 
+PeruvianCookies, 4, 20
+CanadianCookies, 8, 20
+MexicanCookies, 6, 20
+AmericanCookies, 10, 20
+ColombianCookies, 2, 20 
+PeruvianOrganicCookies, 7, 20
+CanadianOrganicCookies, 8, 20
+MexicanOrganicCookies, 6, 20
+AmericanOrganicCookies, 15, 20
+ColombianOrganicCookies, 5, 20 
+PeruvianOrganicCookies, 7, 20
+CanadianOrganicCookies, 8, 20
+MexicanOrganicCookies, 6, 20
+AmericanOrganicCookies, 15, 20
+ColombianOrganicCookies, 5, 20 
+PeruvianCake80gr, 25, 20
+CanadianCake80gr, 7, 20
+MexicanCake80gr, 6, 20
+AmericanCake80gr, 9, 20
+ColombianCake80gr, 3, 20 
+PeruvianCake100gr, 7, 30
+CanadianCake100gr, 9, 30
+MexicanCake100gr, 8, 30
+AmericanCake100gr, 11, 30
+ColombianCake100gr, 5, 30 
+
+Quick Purchase # Basic Level Name - Quantity - Money (75 = 50+20+5; 95 = 50+20+20+5; 105 = 100+5; 205 = 100+100+5)
+PeruJuice250, 5, 50
+CanadaJuice250, 3, 50
+MexicanJuice250, 5, 50
+AmericanJuice250, 8, 50
+ColombianJuice250, 5, 50
+PeruvianOrganicCookies, 5, 200
+CanadianOrganicCookies, 5, 200
+MexicanOrganicCookies, 15, 200
+AmericanOrganicCookies, 14, 200
+ColombianOrganicCookies, 25, 200 
+PeruvianOrganicCookies, 4, 200
+CanadianOrganicCookies, 8, 200
+MexicanOrganicCookies, 5, 200
+AmericanOrganicCookies, 2, 200
+ColombianOrganicCookies, 1, 200 
+PeruvianCookies, 1, 200
+CanadianCookies, 5, 200
+MexicanCookies, 5, 200
+AmericanCookies, 8, 200
+ColombianCookies, 5, 200 
+PeruvianCookies, 4, 200
+CanadianCookies, 3, 200
+MexicanCookies, 12, 200
+AmericanCookies, 7, 200
+ColombianCookies, 6, 200 
+PeruJuice 250, 5, 20
+CanadaJuice 250, 10, 20
+MexicanJuice 250, 3, 20
+AmericanJuice 250, 5, 20
+ColombianJuice 250, 4, 20
+PeruvianOrganicCookies, 15, 400
+CanadianOrganicCookies, 14, 400
+MexicanOrganicCookies, 5, 400
+AmericanOrganicCookies, 11, 400
+ColombianOrganicCookies, 10, 400 
+PeruJuice250, 13, 150
+CanadaJuice250, 25 150
+MexicanJuice250, 1, 150
+AmericanJuice250, 3, 150
+ColombianJuice250, 1, 150
+
+
+Quick Purchase 2 # Advanced Level Name - Quantity - Money (75 = 50+20+5; 95 = 50+20+20+5; 105 = 100+5; 205 = 100+100+5)
+(PeruJuice250, 5; AmericanJuice250, 5; PeruJuice350, 5; ColombianJuice250, 5; AmericanJuice350, 5; AmericanCake80gr, 5; ColombianCake80gr, 8; PeruvianCake80gr, 5; ColombianOrganicCookies, 7; CanadianOrganicCookies, 12; CanadianCake100gr, 3; ColombianOrganicCookies, 2; CanadianCake80gr, 2; ColombianOrganicCookies, 5; ColombianCake80gr, 7; 885)
+
+(ColombianJuice250, 5; ColombianJuice250, 5; PeruvianCake80gr, 4; CanadianCake80gr, 4; MexicanCake80gr, 3; AmericanCake80gr, 3; ColombianCake80gr, 4; ColombianJuice250, 5; CanadianCake100gr, 1; MexicanCake80gr, 7; AmericanCake80gr, 5; ColombianOrganicCookies, 7; CanadianOrganicCookies, 12; CanadianCake100gr, 3; ColombianOrganicCookies, 2; ColombianJuice250, 5; ColombianOrganicCookies, 4; MexicanOrganicCookies, 4; MexicanOrganicCookies, 7; AmericanCake100gr, 9; ColombianJuice250, 5; ColombianCake100gr, 4; 932)
+
+(MexicanOrganicCookies, 7; ColombianJuice250, 5; CanadianCake100gr, 3; ColombianOrganicCookies, 2; CanadianCake80gr, 2; CanadianCake80gr, 9; MexicanCake80gr, 7; AmericanCake80gr, 5; ColombianOrganicCookies, 7; CanadianOrganicCookies, 12; CanadianCake100gr, 3; ColombianOrganicCookies, 2; CanadianCake80gr, 2; ColombianOrganicCookies, 5; ColombianCake80gr, 8; MexicanCake80gr, 7; AmericanCake80gr, 5; ColombianOrganicCookies, 7; CanadianOrganicCookies, 12; CanadianCake100gr, 3; ColombianOrganicCookies, 2; AmericanCake100gr, 9;CanadianCake80gr, 6; ColombianOrganicCookies, 7; CanadianCake80gr, 2; AmericanCake80gr, 1; ColombianCake80gr, 8; 475)
+
+(PeruJuice250, 5; ColombianJuice250, 5; PeruJuice250, 5; AmericanJuice250, 5; PeruJuice350, 5; ColombianJuice250, 5; AmericanJuice350, 5; AmericanCake80gr, 5; ColombianCake80gr, 8; ColombianOrganicCookies, 7; CanadianOrganicCookies, 12; CanadianCake100gr, 3; ColombianOrganicCookies, 2; CanadianCake80gr, 2; ColombianOrganicCookies, 5; PeruvianCake80gr, 5; ColombianOrganicCookies, 7; AmericanJuice250, 5; PeruJuice350, 5; ColombianJuice250, 5; AmericanJuice350, 5; AmericanCake80gr, 3; MexicanCake80gr, 7; AmericanCake80gr, 5; ColombianOrganicCookies, 7; CanadianOrganicCookies, 12; CanadianCake100gr, 3; ColombianOrganicCookies, 2; PeruvianCake80gr, 7; CanadianCake80gr, 5; MexicanOrganicCookies, 4; AmericanCake80gr, 3; ColombianCake80gr, 9; 321)
+
+(ColombianJuice250, 5; ColombianJuice250, 5; PeruJuice250, 5; AmericanJuice250, 5; PeruJuice350, 5; ColombianJuice250, 5; AmericanJuice350, 5; AmericanCake80gr, 5; ColombianCake80gr, 8; ColombianOrganicCookies, 7; CanadianOrganicCookies, 12; CanadianCake100gr, 3; ColombianOrganicCookies, 2; CanadianCake80gr, 2; ColombianOrganicCookies, 5; PeruvianCake80gr, 5; CanadianCake100gr, 3; ColombianOrganicCookies, 2; CanadianCake80gr, 2; CanadianCake80gr, 9; MexicanCake80gr, 7; AmericanCake80gr, 5; ColombianCake80gr, 8; 822)
+
+(AmericanCake80gr, 3; AmericanJuice250, 5; PeruJuice350, 5; ColombianJuice250, 5; AmericanJuice350, 5; AmericanCake80gr, 5; ColombianCake80gr, 8; PeruvianCake80gr, 5; ColombianOrganicCookies, 7; CanadianOrganicCookies, 12; CanadianCake100gr, 3; ColombianOrganicCookies, 2; CanadianCake80gr, 2; ColombianOrganicCookies, 5; ColombianCake80gr, 7; PeruvianCake100gr, 5; ColombianOrganicCookies, 5; ColombianJuice250, 5; CanadianCake100gr, 9; ColombianOrganicCookies, 7; ColombianCake100gr, 6; 524)
+
+(PeruJuice250, 5; AmericanJuice250, 5; MexicanJuice250, 5; AmericanJuice350, 5; CanadianCake100gr, 6; CanadianCake100gr, 8; MexicanOrganicCookies, 7; MexicanCake80gr, 7; AmericanCake80gr, 5; ColombianOrganicCookies, 7; CanadianOrganicCookies, 12; CanadianCake100gr, 3; ColombianOrganicCookies, 2; AmericanCake100gr, 9; ColombianOrganicCookies, 7; CanadianOrganicCookies, 12; CanadianCake100gr, 3; ColombianOrganicCookies, 2; CanadianCake80gr, 2; ColombianOrganicCookies, 5; ColombianJuice250, 5; ColombianCake100gr, 4; 325)
+
+(MexicanOrganicCookies, 7; PeruJuice350, 5; ColombianJuice250, 5; AmericanJuice350, 5; PeruvianCake100gr, 9; CanadianCake100gr, 5; CanadianCake100gr, 3; ColombianOrganicCookies, 2; ColombianCake100gr, 2; MexicanCake80gr, 7; AmericanCake80gr, 5; ColombianOrganicCookies, 7; CanadianOrganicCookies, 12; CanadianCake100gr, 3; ColombianOrganicCookies, 2; AmericanCake100gr, 9; PeruvianCake100gr, 8; CanadianCake100gr, 5; CanadianCake100gr, 8; AmericanCake100gr, 4; ColombianCake100gr, 4; 105)
+
+(ColombianJuice250, 5; CanadianCake100gr, 1; ColombianOrganicCookies, 7; CanadianOrganicCookies, 12; CanadianCake100gr, 3; ColombianOrganicCookies, 2; CanadianCake80gr, 2; PeruJuice350, 5; ColombianJuice250, 5; AmericanJuice350, 5; PeruvianCake100gr, 9; CanadianCake100gr, 5; CanadianCake100gr, 3; ColombianOrganicCookies, 2; ColombianCake100gr, 2; ColombianOrganicCookies, 5; ColombianJuice250, 5; ColombianOrganicCookies, 4; MexicanOrganicCookies, 4; ColombianJuice250, 5; AmericanCake100gr, 3; ColombianCake100gr, 3; 321)
+
+(PeruJuice250, 5; AmericanJuice250, 5; MexicanCake80gr, 7; AmericanCake80gr, 5; ColombianOrganicCookies, 7; CanadianOrganicCookies, 12; CanadianCake100gr, 3; ColombianOrganicCookies, 2; MexicanCake80gr, 7; AmericanCake80gr, 5; ColombianOrganicCookies, 7; CanadianOrganicCookies, 12; CanadianCake100gr, 3; ColombianOrganicCookies, 2; PeruJuice350, 5; ColombianJuice250, 5; AmericanJuice350, 5; PeruvianCake100gr, 9; CanadianCake100gr, 5; CanadianCake100gr, 3; ColombianOrganicCookies, 2; ColombianCake100gr, 2; 822)
+
+
+
+
+
+
+
+
+
+
+
