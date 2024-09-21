@@ -10,7 +10,9 @@ Author: Delio Fernando Palacios Viafara - 30000115782
 
 """
 
-from Configuration.config_loader import load_configuration, process_quick_purchases
+from Configuration.config_loader import load_configuration
+from Configuration.quick_purchases1 import process_quick_purchases1
+from Configuration.quick_purcharses2 import process_quick_purchases2
 from Interfaces import admin_interface, customer_interface
 from Models.Administrator import Administrator
 from Models.Customer import Customer
@@ -26,9 +28,11 @@ def main():
         print("\n--- Menú Principal ---")
         print("1. Modo Cliente")
         print("2. Modo Administrador")
-        print("3. Cargar configuración (archivo)")
-        print("4. Ejecutar compras (archivo)")
-        print("5. Salir")
+        print("3. Cargar configuración 1 (archivo)")
+        print("4. Ejecutar compras 1 (archivo)")
+        print("5 Cargar configuración 2 (archivo)")
+        print("6. Ejecutar compras 2 (archivo)")
+        print("7. Salir")
         choice = input("Seleccione una opción: ")
 
         if choice == '1':
@@ -36,14 +40,22 @@ def main():
         elif choice == '2':
             admin_interface.run_admin_interface(admin)
         elif choice == '3':
-            config_file = 'ConfiguracionExercise2.txt'
+            config_file = 'ConfiguracionExercise.txt'
             print("Cargando configuración...")
             load_configuration(config_file, machine1)
             print("Configuración cargada.")
             #
         elif choice == '4':
-            process_quick_purchases(config_file, machine1)
+            config_file = 'ConfiguracionExercise.txt'
+            process_quick_purchases1(config_file, machine1)
         elif choice == '5':
+            config_file2 = 'ConfiguracionExercise2.txt'
+            print("Cargando configuración...")
+            load_configuration(config_file2, machine1)
+            print("Configuración cargada.")
+        elif choice == '6':
+            process_quick_purchases2(config_file2, machine1)
+        elif choice == '7':
             print("Saliendo del programa...")
             break
         else:

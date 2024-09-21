@@ -25,7 +25,7 @@ Attributes:
         if product_name in self.products:
             return self.products[product_name].price
         else:
-            raise ValueError(f"Producto '{product_name}' no encontrado.")
+            return False
 
     def add_product(self, name: str, price: int, quantity: int) -> None:
         """
@@ -151,7 +151,7 @@ Attributes:
         print(f"Cantidad total de dinero: {total_value}")
 
     def process_purchase(self, product_name: str, quantity: int, money_inserted: int) -> Tuple[bool, Dict[int, int]]:
-        if product_name not in self.products:
+        if product_name.strip() not in self.products:
             print(f"ERROR: Producto '{product_name}' no encontrado")
             return False, {}
 
@@ -205,8 +205,8 @@ Attributes:
         total_price = 0
         for product_name, qty in purchases:
             if product_name not in self.products:
-                print(f"ERROR: Producto '{product_name}' no encontrado.")
-                return False, {}
+
+                continue
 
             product = self.products[product_name]
             total_price += product.price * qty
@@ -219,7 +219,7 @@ Attributes:
 
         if money_inserted < total_price:
             print(
-                f"ERROR: No tienes dinero suficiente para realizar la compra. Requerido: {total_price}, Ingresado: {money_inserted}")
+                f"ERROR: No tienes dinero suficiente para realizar la compra. Requerido: {total_price}, Ingresado: {money_inserted}\n")
             return False, {}
 
         if not self.add_money_in_highest_denominations(money_inserted):
@@ -235,9 +235,14 @@ Attributes:
             # return False, {}
 
         for product_name, quantity in purchases:
-            self.products[product_name].quantity -= quantity
-            print(
-                f"Compraste {quantity} {'unidad' if quantity == 1 else 'unidades'} de '{product_name}'")
+            if product_name in self.products:
+                self.products[product_name].quantity -= quantity
+                print(
+                    f"Compraste {quantity} {'unidad' if quantity == 1 else 'unidades'} de '{product_name}'")
+            else:
+                print(f"El producto {
+                      product_name} no se encuentra en la máquina")
+                continue
 
         change = self.remove_money(money_inserted - total_price)
         return True, change
